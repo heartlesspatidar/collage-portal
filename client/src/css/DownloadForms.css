@@ -1,0 +1,107 @@
+/* DownloadForms.css */
+
+.download-container {
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+.download-heading {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.download-heading:hover {
+  transform: scale(1.05);
+  color: #2563eb;
+}
+
+.table-container {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.table-container:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 12px 16px;
+  font-size: 1rem;
+  color: #1e293b;
+  transition: background-color 0.2s ease-in-out;
+}
+
+tr:hover td {
+  background-color: #eff6ff;
+}
+
+a {
+  color: #1d4ed8;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  td {
+    padding: 10px 12px;
+    font-size: 0.95rem;
+  }
+
+  .download-heading {
+    font-size: 1.8rem;
+  }
+
+  .table-container {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .download-heading {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  table {
+    font-size: 0.85rem;
+  }
+}
+
+/* Fade In Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Table scrollbar on small screens */
+.table-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 10px;
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}

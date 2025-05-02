@@ -1,0 +1,67 @@
+/* SyllabusDownload.css */
+
+/* Container for syllabus download */
+.syllabus-download-container {
+  padding: 2rem;
+  background-color: #f7fafc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.syllabus-download-container h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.syllabus-download-container .note {
+  font-size: 1rem;
+  color: #4a5568;
+  margin-bottom: 1.5rem;
+}
+
+.syllabus-table {
+  width: 100%;
+  max-width: 900px;
+  margin-top: 1.5rem;
+  border-collapse: collapse;
+}
+
+.syllabus-table th,
+.syllabus-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.syllabus-table th {
+  background-color: #4c9aff;
+  color: white;
+  font-size: 1.125rem;
+}
+
+.syllabus-table tr:nth-child(even) {
+  background-color: #f7fafc;
+}
+
+.syllabus-table tr:hover {
+  background-color: #edf2f7;
+  cursor: pointer;
+}
+
+.download-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #3182ce;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.375rem;
+  transition: background-color 0.3s ease;
+}
+
+.download-link:hover {
+  background-color: #2b6cb0;
+}

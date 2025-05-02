@@ -1,0 +1,132 @@
+/* Main background and centering */
+.signup-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #2c3e50, #3498db);
+  padding: 2rem;
+}
+
+/* Form background and style */
+.signup-form {
+  background-color: white;
+  padding: 2.5rem 3rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 450px;
+  animation: slideUp 0.5s ease-in-out;
+}
+
+/* Smooth form appearance */
+@keyframes slideUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.signup-label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #2c3e50;
+}
+
+.signup-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  transition: border-color 0.3s;
+}
+
+.signup-input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.signup-button {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: #2980b9;
+}
+
+/* Error and success messages */
+.signup-error {
+  color: #e74c3c;
+  font-weight: 500;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.signup-success {
+  color: #27ae60;
+  font-weight: 500;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Link toggle for login */
+.signup-toggle {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.signup-toggle a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.signup-toggle a:hover {
+  color: #21618c;
+}
+
+/* Footer */
+.signup-footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #999;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .signup-form {
+    padding: 2rem;
+  }
+
+  .signup-input {
+    font-size: 0.95rem;
+  }
+
+  .signup-button {
+    font-size: 1rem;
+  }
+
+  .signup-label {
+    font-size: 0.95rem;
+  }
+}

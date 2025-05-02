@@ -1,0 +1,67 @@
+/* Navbar.css */
+
+/* Basic styling for the navbar */
+.navbar-container {
+  background-color: #00263f; /* Dark blue for a professional look */
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.navbar-logo {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #ffffff; /* White for logo */
+  letter-spacing: 2px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  color: #ffffff; /* White for nav links */
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #3498db; /* Blue on hover */
+  transform: scale(1.1);
+}
+
+/* Style for Admin link */
+.admin-link {
+  color: #e74c3c; /* Red for admin link */
+  font-weight: 600;
+}
+
+.admin-link:hover {
+  color: #c0392b; /* Darker red on hover */
+  transform: scale(1.1);
+}
+
+/* Style for logout button */
+.logout-button {
+  background-color: #e74c3c; /* Red for logout button */
+  color: white;
+  padding: 0.75rem 1.25rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #c0392b; /* Darker red on hover */
+  transform: scale(1.05);
+}
+
+/* Navbar background change on hover */
+.navbar-container:hover {
+  background-color: #00374d; /* Slightly lighter dark blue */
+}

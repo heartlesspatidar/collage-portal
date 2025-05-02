@@ -1,0 +1,83 @@
+/* StudyMaterialsViewer.css */
+
+/* Container for the study materials viewer */
+.study-materials-viewer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f7fafc;
+  min-height: 100vh;
+}
+
+/* Tabs container */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Styling for the tab buttons */
+.tabs button {
+  background-color: #4c9aff;
+  color: #ffffff;
+  padding: 0.75rem 2rem;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+/* Active tab button */
+.tabs button.active {
+  background-color: #3182ce;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+}
+
+/* Hover effect on tab buttons */
+.tabs button:hover {
+  background-color: #3182ce;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Content section container */
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Section that will be displayed based on active tab */
+.content > div {
+  display: none;
+  width: 100%;
+  max-width: 800px;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Active content section */
+.content > div.active {
+  display: block;
+}
+
+/* General styling for the content */
+.content div h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.content div p {
+  font-size: 1rem;
+  color: #4a5568;
+  line-height: 1.5;
+}

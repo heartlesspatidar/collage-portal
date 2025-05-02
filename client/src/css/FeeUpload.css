@@ -1,0 +1,91 @@
+.fee-upload-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.fee-upload-box {
+  width: 100%;
+  max-width: 800px;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.fee-upload-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.selection-criteria {
+  background-color: #800020;
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.fee-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.captcha-group {
+  margin-top: 10px;
+}
+
+.captcha-inline {
+  display: flex;
+  align-items: center;
+}
+
+.captcha-inline span {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.captcha-input {
+  width: 100px;
+  padding: 5px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.go-button,
+.cancel-button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background-color: #800020;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background-color: #5a0f0f;
+}
+
+.note-section {
+  margin-top: 20px;
+  font-size: 14px;
+}

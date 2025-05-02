@@ -1,0 +1,192 @@
+/* Basic reset and universal styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+}
+
+/* Form container styling */
+.form-container {
+  max-width: 1100px;
+  margin: 30px auto;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  padding: 40px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Form box */
+.form-box {
+  width: 100%;
+}
+
+/* Form heading */
+.form-heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+/* Form note */
+.form-note {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Fieldset for form */
+.form fieldset {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 25px;
+  background-color: #fafafa;
+}
+
+/* Legend inside fieldset */
+.form legend {
+  font-weight: bold;
+  color: #333;
+  padding: 0 10px;
+}
+
+/* Flexbox for left and right columns */
+.left-column,
+.right-column {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+/* Input and select styling */
+.left-column input,
+.right-column input,
+.left-column select,
+.right-column select {
+  flex: 1 1 calc(50% - 10px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input and select hover and focus effects */
+.left-column input:hover,
+.right-column input:hover,
+.left-column select:hover,
+.right-column select:hover {
+  border-color: #3498db;
+}
+
+.left-column input:focus,
+.right-column input:focus,
+.left-column select:focus,
+.right-column select:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Checkbox styling */
+.form input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* Labels styling */
+.form label {
+  display: block;
+  margin: 8px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Submit button */
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #004aad;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* Submit button hover effect */
+.submit-button:hover {
+  background-color: #00337c;
+  transform: translateY(-2px);
+}
+
+/* Responsive design for different screen sizes */
+@media (max-width: 768px) {
+  .left-column input, .right-column input, .left-column select, .right-column select {
+    width: 100%;
+  }
+
+  .form-box {
+    padding: 15px;
+  }
+
+  .form-heading {
+    font-size: 20px;
+  }
+
+  .form-note {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-heading {
+    font-size: 18px;
+  }
+
+  .form-note {
+    font-size: 12px;
+  }
+
+  .form-box {
+    padding: 10px;
+  }
+
+  input[type="text"], input[type="date"], input[type="email"], select {
+    width: 100%;
+  }
+
+  .submit-button {
+    width: 100%;
+  }
+}
+
+.success-message {
+  color: green;
+  font-size: 1.2em;
+  padding: 10px;
+  background-color: #d4edda;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: red;
+  font-size: 1.2em;
+  padding: 10px;
+  background-color: #f8d7da;
+  border-radius: 5px;
+  margin-top: 10px;
+}
